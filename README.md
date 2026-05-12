@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/aria_banner.png" alt="Project Aria Banner" width="800"/>
+<img src="assets/clonex_banner.png" alt="CloneX Banner" width="800"/>
 
-# 🧠 Project Aria: The Autonomous Neural Assistant Ecosystem
+# 🧠 CloneX: The Autonomous Neural Assistant Ecosystem
 
-![Aria Banner](https://img.shields.io/badge/Project-Aria-blueviolet?style=for-the-badge&logo=appveyor)
+![Aria Banner](https://img.shields.io/badge/CloneX-blueviolet?style=for-the-badge&logo=appveyor)
 ![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python)
 ![Node Version](https://img.shields.io/badge/Node-18%2B-green?style=for-the-badge&logo=node.js)
 ![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
@@ -24,7 +24,7 @@
 
 ## 📖 Comprehensive Table of Contents
 
-1. [Introduction to Project Aria](#1-introduction-to-project-aria)
+1. [Introduction to CloneX](#1-introduction-to-CloneX)
 2. [Core Philosophy & Mission](#2-core-philosophy--mission)
 3. [Exhaustive Feature Breakdown](#3-exhaustive-feature-breakdown)
 4. [High-Level Architecture & Data Flow](#4-high-level-architecture--data-flow)
@@ -49,11 +49,11 @@
 
 ---
 
-## 1. Introduction to Project Aria
+## 1. Introduction to CloneX
 
-Welcome to **Project Aria**. In a digital landscape dominated by fragmented tools and cloud-hosted assistants that lock away your data, Project Aria represents a paradigm shift. It is a unified, locally deployable ecosystem designed to give you a sovereign digital proxy. 
+Welcome to **CloneX**. In a digital landscape dominated by fragmented tools and cloud-hosted assistants that lock away your data, CloneX represents a paradigm shift. It is a unified, locally deployable ecosystem designed to give you a sovereign digital proxy. 
 
-Project Aria is not just a chatbot. It is an agentic system that can:
+CloneX is not just a chatbot. It is an agentic system that can:
 - **Join your Google Meet calls** autonomously using headless browser automation.
 - **Transcribe and understand** multi-party conversations in real-time.
 - **Extract action items** and synthesize insights.
@@ -61,14 +61,14 @@ Project Aria is not just a chatbot. It is an agentic system that can:
 - **Interact with you** via a rich, 3D animated WebRTC avatar on a dedicated React dashboard.
 - **Accept remote commands** from a securely authenticated Telegram tether.
 
-Whether you are an executive looking to automate meeting notes, a developer wanting a highly hackable AI infrastructure, or a privacy advocate seeking a local-first digital companion, Project Aria provides the architectural foundation.
+Whether you are an executive looking to automate meeting notes, a developer wanting a highly hackable AI infrastructure, or a privacy advocate seeking a local-first digital companion, CloneX provides the architectural foundation.
 
 ---
 
 ## 2. Core Philosophy & Mission
 
 ### 🛡️ Absolute Privacy First
-Your data is your data. Traditional corporate assistants send your voice, your documents, and your private meetings to opaque cloud servers for training. Project Aria stores all memory, transcripts, and embeddings **locally on your machine**. You own the databases. You control the vault. If you turn the machine off, your data remains yours.
+Your data is your data. Traditional corporate assistants send your voice, your documents, and your private meetings to opaque cloud servers for training. CloneX stores all memory, transcripts, and embeddings **locally on your machine**. You own the databases. You control the vault. If you turn the machine off, your data remains yours.
 
 ### 🤖 True Autonomy
 An assistant should not wait idly for a text prompt. Aria is designed to be proactive. Through the Telegram integration and local scheduling systems, Aria can be instructed to "Join my meeting in 5 minutes," allowing the system to boot a Playwright instance, navigate waiting rooms, and begin transcribing—while you are getting coffee.
@@ -93,7 +93,7 @@ Humans communicate through voice, sight, and text. Aria mirrors this. The core r
 
 ## 4. High-Level Architecture & Data Flow
 
-Project Aria is composed of four primary, deeply integrated components. They run concurrently to form the ecosystem.
+CloneX is composed of four primary, deeply integrated components. They run concurrently to form the ecosystem.
 
 ```mermaid
 graph TD
@@ -157,7 +157,7 @@ graph TD
 
 ## 6. Hardware & Software Prerequisites
 
-To run Project Aria smoothly, your system must meet the following requirements. 
+To run CloneX smoothly, your system must meet the following requirements. 
 
 ### Minimum Hardware
 - **Processor:** Intel Core i5 (8th Gen+) / AMD Ryzen 5 or Apple Silicon (M1+).
@@ -185,8 +185,8 @@ This guide assumes you are starting from a completely blank slate. Please follow
 ### Step 7.1: Clone the Repository
 Open your terminal or command prompt and clone the project:
 ```bash
-git clone https://github.com/your-username/Project_Aria.git
-cd Project_Aria
+git clone https://github.com/your-username/CloneX.git
+cd CloneX
 ```
 
 ### Step 7.2: Initialize the Python Environment
@@ -232,7 +232,7 @@ cd ..
 ```
 
 ### Step 7.6: Initialize the Directory Structure
-Project Aria requires specific folders to store its databases and logs. Create them by running:
+CloneX requires specific folders to store its databases and logs. Create them by running:
 ```bash
 mkdir -p data_vault/sqlite
 mkdir -p data_vault/chroma
@@ -248,9 +248,9 @@ If you want Aria to hear the meeting audio *and* your microphone simultaneously 
 
 ## 8. Environment Variable Configuration Guide
 
-Project Aria relies on a `.env` file at the root of the repository to manage paths and API keys securely.
+CloneX relies on a `.env` file at the root of the repository to manage paths and API keys securely.
 
-1. In the root directory (`Project_Aria/`), create a file named exactly `.env`.
+1. In the root directory (`CloneX/`), create a file named exactly `.env`.
 2. Copy and paste the following template into the file.
 3. Replace the placeholder values with your actual keys.
 
@@ -259,9 +259,9 @@ Project Aria relies on a `.env` file at the root of the repository to manage pat
 # 1. DIRECTORY CONFIGURATION
 # ==========================================
 # Absolute paths to where data will be stored. Update the drive letter/path based on your OS.
-DATA_VAULT_ROOT=D:/AI/Project_Aria/data_vault
-SQLITE_PATH=D:/AI/Project_Aria/data_vault/sqlite/aria_memory.db
-CHROMA_PATH=D:/AI/Project_Aria/data_vault/chroma
+DATA_VAULT_ROOT=D:/AI/CloneX/data_vault
+SQLITE_PATH=D:/AI/CloneX/data_vault/sqlite/aria_memory.db
+CHROMA_PATH=D:/AI/CloneX/data_vault/chroma
 
 # ==========================================
 # 2. VECTOR MEMORY MODELS
@@ -329,12 +329,12 @@ Located in `telegram_agent/`. It runs as a completely independent process.
 
 ## 10. Detailed Usage & Operational Workflows
 
-To operate the entire Project Aria ecosystem, you must run the components concurrently. This requires opening multiple terminal windows.
+To operate the entire CloneX ecosystem, you must run the components concurrently. This requires opening multiple terminal windows.
 
 ### Terminal A: The Data Backend
 This must be started first, as all other components rely on its API.
 ```powershell
-cd Project_Aria
+cd CloneX
 .\venv\Scripts\activate
 python run_data_backend.py
 ```
@@ -343,7 +343,7 @@ python run_data_backend.py
 ### Terminal B: The Dashboard UI
 Start the frontend interface.
 ```powershell
-cd Project_Aria\dashboard
+cd CloneX\dashboard
 npm run dev
 ```
 *Open your browser to `http://localhost:5173` to view the UI.*
@@ -351,7 +351,7 @@ npm run dev
 ### Terminal C: The Core Runtime
 Start the brain and meeting automation orchestrator.
 ```powershell
-cd Project_Aria
+cd CloneX
 .\venv\Scripts\activate
 python main.py
 ```
@@ -362,7 +362,7 @@ If you want to use the remote control capabilities.
 
 **First Time Setup (Linking your Account):**
 ```powershell
-cd Project_Aria
+cd CloneX
 .\venv\Scripts\activate
 python telegram_agent/setup_bot.py
 ```
@@ -395,7 +395,7 @@ python telegram_agent/run_bot.py --account your_email@example.com
 
 ## 11. Understanding the Memory Engine
 
-The LTM (Long-Term Memory) is the crown jewel of Project Aria.
+The LTM (Long-Term Memory) is the crown jewel of CloneX.
 
 **The Problem:** Traditional LLMs have a finite context window. You cannot pass 100 meeting transcripts into a prompt.
 **The Aria Solution:**
@@ -443,7 +443,7 @@ Payload:
 For developers looking to modify the codebase, here is the organizational structure:
 
 ```text
-Project_Aria/
+CloneX/
 │
 ├── .env                       # Environment variables (You create this)
 ├── main.py                    # The Core Runtime entry point
@@ -515,7 +515,7 @@ lsof -ti:8001 | xargs kill -9
 
 ## 15. Developer Guide & Contributing
 
-Project Aria thrives on open-source contributions. If you want to build a new feature, follow these steps:
+CloneX thrives on open-source contributions. If you want to build a new feature, follow these steps:
 
 ### Setting up for Development
 1. Fork the repository on GitHub.
@@ -548,7 +548,7 @@ We take security seriously.
 
 ## 17. Roadmap & Future Horizons
 
-Project Aria is evolving rapidly. Here is our technical roadmap:
+CloneX is evolving rapidly. Here is our technical roadmap:
 
 - [x] **Phase 1: Core Automation** - Headless Google Meet joining and transcript extraction.
 - [x] **Phase 2: The Vault** - Implementation of ChromaDB and the dual-stage RAG pipeline.
@@ -563,7 +563,7 @@ Project Aria is evolving rapidly. Here is our technical roadmap:
 ## 18. License & Acknowledgements
 
 ### License
-Project Aria is released under the **MIT License**. You are free to use, modify, and distribute this software for personal or commercial purposes, provided you include the original copyright notice. See the `LICENSE` file for details.
+CloneX is released under the **MIT License**. You are free to use, modify, and distribute this software for personal or commercial purposes, provided you include the original copyright notice. See the `LICENSE` file for details.
 
 ### Acknowledgements
 Building a system of this complexity requires standing on the shoulders of giants. We deeply thank the maintainers and communities behind:
@@ -577,5 +577,5 @@ Building a system of this complexity requires standing on the shoulders of giant
 
 <div align="center">
   <p><b>Built with ❤️ for the future of Sovereign AI.</b></p>
-  <p>If Project Aria helped you, consider giving the repository a ⭐ on GitHub!</p>
+  <p>If CloneX helped you, consider giving the repository a ⭐ on GitHub!</p>
 </div>
