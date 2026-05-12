@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[PostInstall] Running Aria Agent prerequisite checks..."
+
+if ! command -v obs >/dev/null 2>&1; then
+  echo "[PostInstall] OBS not found. Please install OBS Studio before first run."
+fi
+
+if ! system_profiler SPAudioDataType | grep -qi blackhole; then
+  echo "[PostInstall] BlackHole not found. Please install BlackHole before first run."
+fi
+
+echo "[PostInstall] Complete. Launch /Applications/AriaAgent.app"
+exit 0

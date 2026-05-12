@@ -1,0 +1,17 @@
+{
+  "include": [
+    "modules",
+    "data_backend",
+    "scripts",
+    "main.py",
+    "test_face_detect.py",
+    "test_response_gate.py"
+  ],
+  "extraPaths": [
+    ".",
+    "modules",
+    "D:/AI/LivePortrait"
+  ],
+  "typeCheckingMode": "basic"
+}
+

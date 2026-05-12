@@ -1,0 +1,9 @@
+openai-whisper
+pyaudio
+numpy
+groq
+playwright
+chromadb
+sentence-transformers
+python-dotenv
+cryptography
