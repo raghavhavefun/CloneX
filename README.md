@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/aria_banner.png" alt="Project Aria Banner" width="800"/>
+
 # 🧠 Project Aria: The Autonomous Neural Assistant Ecosystem
 
 ![Aria Banner](https://img.shields.io/badge/Project-Aria-blueviolet?style=for-the-badge&logo=appveyor)
